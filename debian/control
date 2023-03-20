@@ -19,6 +19,7 @@ Section: libdevel
 Architecture: any
 Depends: libwreport3 (= ${binary:Version}), liblua5.1-0-dev, ${misc:Depends}
 Recommends: pkg-config
+Multi-Arch: same
 Description: library for working with weather reports
  libwreport is a C++ library for working with weather reports.
  .
@@ -40,6 +41,7 @@ Package: libwreport-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+Multi-Arch: foreign
 Description: documentation for libwreport
  libwreport is a C++ library to read and write weather reports in BUFR and CREX
  formats.
